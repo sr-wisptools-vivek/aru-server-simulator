@@ -38,6 +38,7 @@ if (Meteor.isServer) {
     } else {
       console.log('Done: ' + job.data.archiveId);
       job.done("Done");
+      cb();
     }
   }
 }
